@@ -1,1 +1,1 @@
-web: gunicorn EENC.wsgi
+gunicorn EENC.wsgi
