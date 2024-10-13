@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+{% load static %}
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="{% static 'assets/img/logo-removebg-preview.png' %}" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="{% static 'index-2.html' %}" />
+    <link rel="manifest" href="{% static 'manifest.json' %}" />
+    <title>Enkryptia</title>
+    <script defer="defer" src="{% static 'js/main.005e037c.js' %}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="{% static 'css/main.2705007e.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <section id="hero" class="d-flex align-items-center">
+
+        <div class="container">
+            <section class="showcase">
+                <header>
+                    <!-- <a class="navbar-brand me-2" href="/">
+            <img class="logo" src="./assets/img/logo-removebg-preview.png" height="50" alt="MDB Logo" loading="lazy"
+              style="margin-top: -1px;" />
+          </a> -->
+                </header>
+                <video src="explore2.mp4" muted loop autoplay class="video"></video>
+                <div class="overlay"></div>
+                <div class="text">
+                    <h2>Enkryptiaa</h2>
+                    <h1 class="mb-4 pb-0">The Annual<br><span>Hackathon</span> Event</h1>
+                    <p class="mb-4 pb-0">26-28 October,<br /> Goverment Polytechnic, Nagpur</p>
+                    <a href="https://lu.ma/09lmt81v" class="about-btn scrollto">Register</a>
+                </div>
+            </section>
+
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#speakers">Events</a>
+                    <a class="nav-item nav-link" href="#heros">Hackathon</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section id="about">
+        <div class="container position-relative" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>About The Event</h2>
+                    <p>The core of your event, the hackathon, is a competition where participants, often tech-savvy
+                        individuals,
+                        work together or individually to create innovative software solutions, often within a limited
+                        timeframe.
+                        It's a platform for coding enthusiasts to put their skills to the test and develop new,
+                        practical
+                        applications.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Where</h3>
+                    <p>Goverment Polytechnic,Nagpur</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>When</h3>
+                    <p>Thusday to Saturday<br>26-28 October</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clients" class="clients section-bg p-5">
+        <div class="container">
+
+            <div class="row" data-aos="zoom-in">
+                <h1 style="color:#46afeb;" class="p-2">Sponsors</h1>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center logo">
+                    <img src="{% static 'assets/img/clients/client-10.png' %}" class="img-fluid" alt="Client 10">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center logo">
+                    <img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt="Client 1">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'assets/img/clients/client-2.png' %}" class="img-fluid" alt="Client 2">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'assets/img/clients/client-3.png' %}" class="img-fluid" alt="Client 3">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'assets/img/clients/client-4.png' %}" class="img-fluid" alt="Client 4">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'assets/img/clients/client-5.png' %}" class="img-fluid" alt="Client 5">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'assets/img/clients/client-6.png' %}" class="img-fluid" alt="Client 6">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'assets/img/clients/client-7.png' %}" class="img-fluid" alt="Client 7">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'assets/img/clients/client-8.png' %}" class="img-fluid" alt="Client 8">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'assets/img/clients/client-9.png' %}" class="img-fluid" alt="Client 9">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div id="root"></div>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="../cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+    <script src="../cdn.jsdelivr.net/npm/vanta/dist/vanta.halo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+    <!-- <section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+      <center>
+        <h1 class="eh">Events</h1>
+      </center>
+      <div class="row portfolio-container container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-img"><img src="assets/img/Events/IMG-20231008-WA0020.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="portfolio-info">
+            <h4>App 1</h4>
+            <p>App</p>
+            <a href="assets/img/Events/IMG-20231008-WA0020.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+            <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-img"><img src="assets/img/Events/IMG-20231008-WA0022.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="portfolio-info">
+            <h4>Web 3</h4>
+            <p>Web</p>
+            <a href="assets/img/Events/IMG-20231008-WA0022.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-img"><img src="assets/img/Events/IMG-20231008-WA0024.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="portfolio-info">
+            <h4>App 2</h4>
+            <p>App</p>
+            <a href="assets/img/Events/IMG-20231008-WA0024.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+            <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-img"><img src="assets/img/Events/IMG-20231008-WA0018.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="portfolio-info">
+            <h4>Card 2</h4>
+            <p>Card</p>
+            <a href="assets/img/Events/IMG-20231008-WA0018.jpg" data-gallery="portfolioGallery"
+              class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+            <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+  </section> -->
+
+
+
+    <div class="content">
+
+        <div class="container ">
+            <div class="row mb-5 ">
+                <div class="col-12 text-center">
+                    <h3 class="eh">Themes</h3>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="site-section bg-left-half mb-5">
+            <div class="container owl-2-style">
+
+                <div class="owl-carousel owl-2">
+
+                    <div class="media-29101">
+                        <img src="./images/icon_communication.png" alt="Image" class="img-fluid">
+                        <h3><a class="text-light">SMART AUTOMATION</a></h3>
+                        <p>Ideas focused on the intelligent use of resources for transforming and advancements of
+                            technology with combining the artificial intelligence to explore more various sources and
+                            get valuable insights.</p>
+                    </div>
+
+                    <div class="media-29101">
+                        <img src="images/icon_sport.png" alt="Image" class="img-fluid">
+                        <h3><a class="text-light">FITNESS & SPORTS</a></h3>
+                        <p>Ideas that can boost fitness activities and assist in keeping fit.</p>
+                    </div>
+
+                    <div class="media-29101">
+                        <img src="images/icon_heritage.png" alt="Image" class="img-fluid">
+                        <h3><a class="text-light">HERITAGE & CULTURE</a></h3>
+                        <p>Ideas that showcase the rich cultural heritage and traditions of India.</p>
+                    </div>
+
+                    <div class="media-29101">
+                        <img src="images/icon_healthcare.png" alt="Image" class="img-fluid">
+                        <h3><a class="text-light">MEDTECH/BIOTECH/ HEALTHTECH</a></h3>
+                        <p>Cutting-edge technology in these sectors continues to be in demand. Recent shifts in
+                            healthcare trends, growing populations also present an array of opportunities for
+                            innovation.</p>
+                    </div>
+
+                    <div class="media-29101">
+                        <img src="images/icon_technology.png" alt="Image" class="img-fluid">
+                        <h3><a class="text-light">AGRICULTURE, FOODTECH & RURAL DEVELOPMENT</a></h3>
+                        <p>Developing solutions, keeping in mind the need to enhance the primary sector of India -
+                            Agriculture and to manage and process our agriculture produce.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content ">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Problem Statements</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sr no</th>
+                                <th>Problem Statement</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Energy Efficiency in Smart Homes:</td>
+                                <td>Develop solutions that optimize energy consumption in smart homes through
+                                    intelligent automation, considering factors such as occupancy, weather, and user
+                                    preferences.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Autonomous Vehicle Security:</td>
+                                <td>Address the security challenges associated with autonomous vehicles, ensuring robust
+                                    protection against cyber threats and unauthorized access.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Smart City Traffic Management:
+                                </td>
+                                <td>Propose innovative approaches to optimize traffic flow in smart cities using
+                                    automation, real-time data analytics, and intelligent transportation systems.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Industrial Automation for Sustainability:
+                                </td>
+                                <td>Implement automation technologies in industries to enhance sustainability practices,
+                                    reduce waste, and minimize environmental impact.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Intelligent Resource Allocation in Agriculture:
+                                </td>
+                                <td>Develop systems that use artificial intelligence to optimize resource allocation in
+                                    agriculture, ensuring efficient use of water, fertilizers, and other inputs.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content ">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Problem Statements</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sr no</th>
+                                <th>Problem Statement</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Energy Efficiency in Smart Homes:</td>
+                                <td>Develop solutions that optimize energy consumption in smart homes through
+                                    intelligent automation, considering factors such as occupancy, weather, and user
+                                    preferences.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Autonomous Vehicle Security:</td>
+                                <td>Address the security challenges associated with autonomous vehicles, ensuring robust
+                                    protection against cyber threats and unauthorized access.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Smart City Traffic Management:
+                                </td>
+                                <td>Propose innovative approaches to optimize traffic flow in smart cities using
+                                    automation, real-time data analytics, and intelligent transportation systems.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Industrial Automation for Sustainability:
+                                </td>
+                                <td>Implement automation technologies in industries to enhance sustainability practices,
+                                    reduce waste, and minimize environmental impact.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Intelligent Resource Allocation in Agriculture:
+                                </td>
+                                <td>Develop systems that use artificial intelligence to optimize resource allocation in
+                                    agriculture, ensuring efficient use of water, fertilizers, and other inputs.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content ">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Problem Statements</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sr no</th>
+                                <th>Problem Statement</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Energy Efficiency in Smart Homes:</td>
+                                <td>Develop solutions that optimize energy consumption in smart homes through
+                                    intelligent automation, considering factors such as occupancy, weather, and user
+                                    preferences.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Autonomous Vehicle Security:</td>
+                                <td>Address the security challenges associated with autonomous vehicles, ensuring robust
+                                    protection against cyber threats and unauthorized access.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Smart City Traffic Management:
+                                </td>
+                                <td>Propose innovative approaches to optimize traffic flow in smart cities using
+                                    automation, real-time data analytics, and intelligent transportation systems.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Industrial Automation for Sustainability:
+                                </td>
+                                <td>Implement automation technologies in industries to enhance sustainability practices,
+                                    reduce waste, and minimize environmental impact.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Intelligent Resource Allocation in Agriculture:
+                                </td>
+                                <td>Develop systems that use artificial intelligence to optimize resource allocation in
+                                    agriculture, ensuring efficient use of water, fertilizers, and other inputs.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="modal" id="myModal3">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content ">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Problem Statements</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sr no</th>
+                                <th>Problem Statement</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Energy Efficiency in Smart Homes:</td>
+                                <td>Develop solutions that optimize energy consumption in smart homes through
+                                    intelligent automation, considering factors such as occupancy, weather, and user
+                                    preferences.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Autonomous Vehicle Security:</td>
+                                <td>Address the security challenges associated with autonomous vehicles, ensuring robust
+                                    protection against cyber threats and unauthorized access.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Smart City Traffic Management:
+                                </td>
+                                <td>Propose innovative approaches to optimize traffic flow in smart cities using
+                                    automation, real-time data analytics, and intelligent transportation systems.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Industrial Automation for Sustainability:
+                                </td>
+                                <td>Implement automation technologies in industries to enhance sustainability practices,
+                                    reduce waste, and minimize environmental impact.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Intelligent Resource Allocation in Agriculture:
+                                </td>
+                                <td>Develop systems that use artificial intelligence to optimize resource allocation in
+                                    agriculture, ensuring efficient use of water, fertilizers, and other inputs.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="modal" id="myModal4">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content ">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Problem Statements</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Sr no</th>
+                                <th>Problem Statement</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Energy Efficiency in Smart Homes:</td>
+                                <td>Develop solutions that optimize energy consumption in smart homes through
+                                    intelligent automation, considering factors such as occupancy, weather, and user
+                                    preferences.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Autonomous Vehicle Security:</td>
+                                <td>Address the security challenges associated with autonomous vehicles, ensuring robust
+                                    protection against cyber threats and unauthorized access.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Smart City Traffic Management:
+                                </td>
+                                <td>Propose innovative approaches to optimize traffic flow in smart cities using
+                                    automation, real-time data analytics, and intelligent transportation systems.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Industrial Automation for Sustainability:
+                                </td>
+                                <td>Implement automation technologies in industries to enhance sustainability practices,
+                                    reduce waste, and minimize environmental impact.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Intelligent Resource Allocation in Agriculture:
+                                </td>
+                                <td>Develop systems that use artificial intelligence to optimize resource allocation in
+                                    agriculture, ensuring efficient use of water, fertilizers, and other inputs.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <main id="main" style="background-color: #010818">
+
+        <!-- ======= About Section ======= -->
+        <!-- End About Section -->
+
+
+        <footer class="bg-dark text-center text-white " style="background-color: #010818">
+            <div class=" p-4 pb-0" style="background-color: #010818">
+                <section class="mb-0" style="background-color: #010818">
+
+                    <div class="row pt-4">
+                        <div class="col-sm-6 col-md-3 pb-4">
+                            <h4 class="mb-4 text-light">
+                                Services
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" class="text-light">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#speakers" class="text-light">Event</a>
+                                </li>
+                                <li>
+                                    <a href="#heros" class="text-light">Hackathon</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 pb-4">
+                            <h4 class="mb-4 text-light">
+                                Location
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-light">Goverment Polytechnic, Nagpur</a>
+                                </li>
+                                <li>
+                                    <a class="text-light">Sadar, Nagpur</a>
+                                </li>
+                                <li>
+                                    <a class="text-light">Mob. 8421689721</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 pb-4">
+                            <h4 class="mb-4 text-light">
+                                Enkryptiaa
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-light">Our event, Enkryptiaa, has been a part of our academic and
+                                        <br> innovation
+                                        calendar for the past 13 years</a>
+                                </li>
+                                <li>
+                                    <a class="text-light">and it continues to thrive as a platform for fostering
+                                        innovation,<br>
+                                        collaboration, and problem-solving</a>
+                                </li>
+                                <br /><br />
+                                <li>
+                                    <a href="https://www.linkedin.com/in/rajat-petkar-515416223/"
+                                        class="text-light mine">Developed by -
+                                        Rajat Petkar</a>
+                                </li>
+                            </ul>
+                        </div>
+                </section>
+            </div>
+
+            <div class="text-center p-3" style="background-color: #000000">
+                © 2023 Copyright
+                <a class="text-white" href="https://mdbootstrap.com/"> Enkryptiaa</a>
+            </div>
+        </footer>
+    </main>
+    </div>
+</body>
+<script src="./index.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
