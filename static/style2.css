@@ -1,0 +1,105 @@
+.cvents-holder {
+    width: 89%;
+    height: 900px;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+}
+
+.writer-board {
+    width: 95%;
+    height: 200px;
+    display: flex;
+    gap: 1rem;
+    border-radius: 20px;
+    margin-top: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-post {
+    width: 32%;
+    height: 90%;
+    background-color: rgb(25, 25, 48);
+    border-radius: 10px;
+    position: relative;
+}
+
+.img-switch {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask: linear-gradient(0deg, transparent, white 80%);
+
+}
+
+.banner-into {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subscript {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 40px;
+    color: white;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.poster-and-rulebook {
+    width: 95%;
+    height: 660px;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+    align-items: center;
+}
+
+.anth-samay {
+    font-size: 60px;
+    color: white;
+}
+
+.banner-holder-bulbul {
+    width: 36%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.rulebook-holder {
+    width: 63%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rulebook-top {
+    width: 100%;
+    height: 15%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.rulebook {
+    width: 100%;
+    height: 70%;
+}
+
+.rulebook-footer {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(66, 66, 66);
+}

@@ -31,7 +31,8 @@
     <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/style2.css' %}">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
@@ -41,6 +42,193 @@
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .footer {
+            background: linear-gradient(135deg, #9050f0, #791e8f, #e91c53);
+
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer h5 {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+            color: #61dafb;
+            /* Lighter hover color */
+        }
+
+        .service-link {
+            cursor: pointer;
+        }
+
+        .service-link:hover {
+            color: #61dafb;
+            /* Change color on hover */
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            font-size: 24px;
+            margin: 0 15px;
+            color: white;
+            transition: transform 0.3s, color 0.3s;
+            /* Transition effect */
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+            /* Scale up on hover */
+            color: #61dafb;
+            /* Change color on hover */
+        }
+
+        .creator-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .creator {
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .creator:hover {
+            color: #61dafb;
+            /* Change color on hover */
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .glass-btn {
+            width: 60px;
+            height: 60px;
+            /* background-color: #fafafa; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+            margin-left: 1em;
+            margin-right: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &.blue-btn {
+                -webkit-box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+                -moz-box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+                box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+
+                &:hover {
+                    -webkit-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+                    -moz-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+                    box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+                }
+
+                .content {
+                    font-size: 4em;
+                    font-family: "Roboto", sans-serif;
+                    background: linear-gradient(to right, #006fff, #00acff 70%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-shadow: 0px 10px 37px rgba(0, 111, 255, 0.8);
+                }
+            }
+
+            &.red-btn {
+                -webkit-box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
+                -moz-box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
+                box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
+
+                &:hover {
+                    -webkit-box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
+                    -moz-box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
+                    box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
+                }
+
+                .content {
+                    font-size: 4em;
+                    font-family: "Roboto", sans-serif;
+                    background: linear-gradient(to right, #ff1027, #ff4f06 70%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-shadow: 0px 10px 37px rgba(255, 16, 39, 0.6);
+                }
+            }
+
+            &.amber-btn {
+                -webkit-box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
+                -moz-box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
+                box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
+
+                &:hover {
+                    -webkit-box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
+                    -moz-box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
+                    box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
+                }
+
+                .content {
+                    font-size: 4em;
+                    font-family: "Roboto", sans-serif;
+                    background: linear-gradient(to right, #ff8d00, #f7ad07 70%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-shadow: 0px 10px 37px rgba(255, 94, 16, 0.7);
+                }
+            }
+
+            &:hover {
+                background-color: darken(#fafafa, 2%);
+                transform: translateY(-5px);
+                transition: all 0.3s;
+            }
+        }
+
+        .service-link {
+            color: rgb(162, 196, 247) !important;
+            transition: 0.3s ease;
+        }
+
+        .service-link:hover {
+            color: rgb(255, 255, 255) !important;
+            transition: 0.3s ease;
+
+        }
+
+        .meet-timing {
+            text-decoration: underline;
+            /* color: white; */
+            font-size: 23px;
+        }
+
+        .meet-timing:hover {
+            color: white !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,12 +242,12 @@
               style="margin-top: -1px;" />
           </a> -->
                 </header>
-                <video src="explore2.mp4" muted loop autoplay class="video"></video>
+                <video src="{% static 'media\explore.mp4' %}" muted loop autoplay class="video"></video>
                 <div class="overlay"></div>
                 <div class="text">
-                    <h2>Enkryptiaa</h2>
+                    <h2 style="font-size: 100px; margin-bottom: 30px; color: #46afeb;">Enkryptia</h2>
                     <h1 class="mb-4 pb-0">The Annual<br><span>Hackathon</span> Event</h1>
-                    <p class="mb-4 pb-0">26-28 October,<br /> Goverment Polytechnic, Nagpur</p>
+                    <p class="mb-4 pb-0">24-25 October,<br /> Goverment Polytechnic, Nagpur</p>
                     <a href="https://lu.ma/09lmt81v" class="about-btn scrollto">Register</a>
                 </div>
             </section>
@@ -92,15 +280,51 @@
                 </div>
                 <div class="col-lg-3">
                     <h3>Where</h3>
-                    <p>Goverment Polytechnic,Nagpur</p>
+                    <p>Goverment Polytechnic Nagpur</p>
                 </div>
                 <div class="col-lg-3">
                     <h3>When</h3>
-                    <p>Thusday to Saturday<br>26-28 October</p>
+                    <p>Thursday to Friday<br>24-25 October</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- <section style="width: 100%; background-color: #0c0c1b;">
+        <div class="cvents-holder">
+            <div class="writer-board">
+                <div class="card-post hackathon-post">
+                    <img src="https://i0.wp.com/tecknoworks.com/wp-content/uploads/2020/01/hackathon-1.png"
+                        class="img-switch" alt="">
+                    <h2 class="subscript">Hackathon</h2>
+                </div>
+                <div class="card-post hackathon-post">
+                    <img src="https://img.theweek.in/content/dam/week/leisure/society/images/2018/11/1/mun-1.jpg"
+                        class="img-switch" alt="">
+                    <h2 class="subscript">MUN</h2>
+                </div>
+                <div class="card-post hackathon-post">
+                    <img src="https://i.ytimg.com/vi/x7yudbWlLGw/maxresdefault.jpg" class="img-switch" alt="">
+                    <h2 class="subscript">GPTL</h2>
+                </div>
+            </div>
+            <div class="poster-and-rulebook">
+                <div class="banner-holder-bulbul">
+                    <img src="{% static 'assets/img/Events/encr1.png' %}" class="banner-into" alt="">
+                </div>
+                <div class="rulebook-holder">
+                    <div class="rulebook-top">
+                        <h2 class="anth-samay">RULEBOOK</h2>
+                    </div>
+                    <div class="rulebook">
+
+                    </div>
+                    <div class="rulebook-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
     <section id="clients" class="clients section-bg p-5">
         <div class="container">
@@ -119,17 +343,8 @@
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
                     <img src="{% static 'assets/img/clients/client-2.png' %}" class="img-fluid" alt="Client 2">
                 </div>
-
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{% static 'assets/img/clients/client-3.png' %}" class="img-fluid" alt="Client 3">
-                </div>
-
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
                     <img src="{% static 'assets/img/clients/client-4.png' %}" class="img-fluid" alt="Client 4">
-                </div>
-
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{% static 'assets/img/clients/client-5.png' %}" class="img-fluid" alt="Client 5">
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
@@ -144,9 +359,6 @@
                     <img src="{% static 'assets/img/clients/client-8.png' %}" class="img-fluid" alt="Client 8">
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{% static 'assets/img/clients/client-9.png' %}" class="img-fluid" alt="Client 9">
-                </div>
             </div>
 
         </div>
@@ -226,7 +438,7 @@
         <div class="container ">
             <div class="row mb-5 ">
                 <div class="col-12 text-center">
-                    <h3 class="eh">Themes</h3>
+                    <h3 class="eh">Domains</h3>
                 </div>
             </div>
         </div>
@@ -239,38 +451,48 @@
                 <div class="owl-carousel owl-2">
 
                     <div class="media-29101">
-                        <img src="./images/icon_communication.png" alt="Image" class="img-fluid">
-                        <h3><a class="text-light">SMART AUTOMATION</a></h3>
-                        <p>Ideas focused on the intelligent use of resources for transforming and advancements of
-                            technology with combining the artificial intelligence to explore more various sources and
-                            get valuable insights.</p>
+                        <img src="{% static 'media\images\AI_2.jpeg.jpg' %}" alt="Image" class="img-fluid">
+                        <h3><a class="text-light">Artificial Intelligence</a></h3>
+                        <p>Dive into the world of intelligent systems and machine learning! Tackle challenges in
+                            computer vision, natural language processing, predictive modeling, and more. Bring AI
+                            solutions to life and showcase your innovation in automation, decision-making, and data
+                            analysis.
+
+                        </p>
                     </div>
 
                     <div class="media-29101">
-                        <img src="images/icon_sport.png" alt="Image" class="img-fluid">
-                        <h3><a class="text-light">FITNESS & SPORTS</a></h3>
-                        <p>Ideas that can boost fitness activities and assist in keeping fit.</p>
+                        <img src="{% static 'media\images\CyS_2.jpeg.jpg' %}" alt="Image" class="img-fluid">
+                        <h3><a class="text-light">Cybersecurity</a></h3>
+                        <p>Test your skills in defending against digital threats! Solve real-world cybersecurity
+                            challenges by identifying vulnerabilities, preventing attacks, and securing systems. This is
+                            your chance to show expertise in protecting networks, data, and users from evolving cyber
+                            threats.</p>
                     </div>
 
                     <div class="media-29101">
-                        <img src="images/icon_heritage.png" alt="Image" class="img-fluid">
-                        <h3><a class="text-light">HERITAGE & CULTURE</a></h3>
-                        <p>Ideas that showcase the rich cultural heritage and traditions of India.</p>
+                        <img src="{% static 'media\images\BlockC_1.jpeg.jpg' %}" alt="Image" class="img-fluid">
+                        <h3><a class="text-light">Blockchain</a></h3>
+                        <p>Explore the future of decentralized technology! Develop blockchain-based solutions for
+                            security, transparency, and efficiency. From creating smart contracts to building dApps,
+                            this domain offers a platform to revolutionize industries with blockchain innovation.</p>
                     </div>
 
                     <div class="media-29101">
-                        <img src="images/icon_healthcare.png" alt="Image" class="img-fluid">
-                        <h3><a class="text-light">MEDTECH/BIOTECH/ HEALTHTECH</a></h3>
-                        <p>Cutting-edge technology in these sectors continues to be in demand. Recent shifts in
-                            healthcare trends, growing populations also present an array of opportunities for
-                            innovation.</p>
+                        <img src="{% static 'media\images\Webdev_1.jpeg.jpg' %}" alt="Image" class="img-fluid">
+                        <h3><a class="text-light">Web Development</a></h3>
+                        <p>Push the limits of modern web technologies! Build innovative, responsive, and interactive
+                            websites or applications. Whether it’s frontend or backend, showcase your skills in creating
+                            dynamic, user-friendly web experiences using the latest frameworks and tools.</p>
                     </div>
 
                     <div class="media-29101">
-                        <img src="images/icon_technology.png" alt="Image" class="img-fluid">
-                        <h3><a class="text-light">AGRICULTURE, FOODTECH & RURAL DEVELOPMENT</a></h3>
-                        <p>Developing solutions, keeping in mind the need to enhance the primary sector of India -
-                            Agriculture and to manage and process our agriculture produce.</p>
+                        <img src="{% static 'media\images\CC_2.jpeg.jpg' %}" alt="Image" class="img-fluid">
+                        <h3><a class="text-light">Cloud Computing</a></h3>
+                        <p>Harness the power of the cloud! Build scalable, secure, and efficient applications using
+                            cloud platforms. Whether it’s infrastructure as a service (IaaS), platform as a service
+                            (PaaS), or software as a service (SaaS), create solutions that leverage the cloud’s
+                            capabilities for businesses and users.</p>
                     </div>
 
                 </div>
@@ -637,7 +859,7 @@
         <!-- End About Section -->
 
 
-        <footer class="bg-dark text-center text-white " style="background-color: #010818">
+        <!-- <footer class="bg-dark text-center text-white " style="background-color: #010818">
             <div class=" p-4 pb-0" style="background-color: #010818">
                 <section class="mb-0" style="background-color: #010818">
 
@@ -676,11 +898,11 @@
                         </div>
                         <div class="col-md-6 pb-4">
                             <h4 class="mb-4 text-light">
-                                Enkryptiaa
+                                Enkryptia
                             </h4>
                             <ul class="list-unstyled">
                                 <li>
-                                    <a class="text-light">Our event, Enkryptiaa, has been a part of our academic and
+                                    <a class="text-light">Our event, Enkryptia, has been a part of our academic and
                                         <br> innovation
                                         calendar for the past 13 years</a>
                                 </li>
@@ -694,6 +916,12 @@
                                     <a href="https://www.linkedin.com/in/rajat-petkar-515416223/"
                                         class="text-light mine">Developed by -
                                         Rajat Petkar</a>
+                                    <a href="https://www.linkedin.com/in/rajat-petkar-515416223/"
+                                        class="text-light mine">Developed by -
+                                        Ram Rajurkar</a>
+                                    <a href="https://www.linkedin.com/in/rajat-petkar-515416223/"
+                                        class="text-light mine">Developed by -
+                                        Shreeharsh Shivpuje</a>
                                 </li>
                             </ul>
                         </div>
@@ -702,17 +930,128 @@
 
             <div class="text-center p-3" style="background-color: #000000">
                 © 2023 Copyright
-                <a class="text-white" href="https://mdbootstrap.com/"> Enkryptiaa</a>
+                <a class="text-white" href="https://mdbootstrap.com/"> Enkryptia</a>
+            </div>
+        </footer> -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="meet-timing">Contact Information</h5>
+                        <p>
+                            <strong>Email:</strong> <a href="mailto:enkryptia@gmail.com"
+                                class="text-light">enkryptia@gmail.com</a><br>
+                            <strong>Phone:</strong> <a href="tel:+918625067058" class="text-light">+918625067058</a><br>
+                            <strong>Address:</strong> Goverment Polytechnic, Sadar, Nagpur
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="meet-timing">About Us</h5>
+                        <p>Our event, Enkryptia, has been a part of our academic and
+                            <br> innovation
+                            calendar for the past 13 years and it continues to thrive as a platform for fostering
+                            innovation,<br>
+                            collaboration, and problem-solving
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="meet-timing">Our Services</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class=" service-link">Home</a></li>
+                            <li><a href="#speakers" class=" service-link">Event <br></a></li>
+                            <li><a href="#heros" class=" service-link">Hackathon</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col text-center">
+                        <h5>Meet Our Creators</h5>
+                        <div class="creator-links">
+                            <a href="https://www.linkedin.com/in/rajat-petkar-515416223/" target="_blank"
+                                class="creator text-light" style="color: #46afeb;">Rajat Petkar</a>
+                            <a href="https://www.linkedin.com/in/shreeharsh-shivpuje-95a397207" target="_blank"
+                                class="creator text-light" style="color: #46afeb;">Shreeharsh Shivpuje</a>
+                            <a href="https://www.linkedin.com/in/ram-rajurkar-647b90258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank" class="creator text-light" style="color: #46afeb;">Ram Rajurkar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col text-center">
+                        <h5>Connect with Us</h5>
+                        <div class="button-container">
+
+                            <div class="glass-btn blue-btn">
+                                <!--<div class="content">
+                                h
+                              </div> -->
+                                <a href="mailto:enkryptia@gmail.com" style="width: auto; height: auto;">
+                                    <img src="{% static 'assets\img\mail.png' %}" alt="facebook" style="width: 2.6em;">
+
+                                </a>
+                            </div>
+
+                            <div class="glass-btn red-btn">
+                                <!-- <div class="content">
+                                e
+                              </div> -->
+                                <a href="https://youtube.com/@enkryptia?si=Bks13otPUu2fqxH_"
+                                    style="width: auto; height: auto;">
+                                    <img src="https://i.postimg.cc/LstJ4Hhf/youtube.png" alt="youtube"
+                                        style="width: 6em;">
+                                </a>
+                            </div>
+
+                            <div class="glass-btn amber-btn">
+                                <!-- <div class="content">
+                                y
+                              </div> -->
+                                <a href="https://www.instagram.com/enkryptia?igsh=MTR6eGF5OHg3c3FweA=="
+                                    style="width: auto; height: auto;">
+                                    <img src="{% static 'assets\img\insta.png' %}" alt="soundcloud"
+                                        style="width: 3.5em;">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom text-center mt-4">
+                    <p>&copy; 2024 <a href="https://www.linkedin.com/in/janesmith" target="_blank"
+                            class="text-light">Enkryptia</a>. All rights reserved.</p>
+                </div>
             </div>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="script.js"></script>
+        <script>
+            // Functionality to alert on service links click
+            const serviceLinks = document.querySelectorAll('.service-link');
+
+            serviceLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent the default anchor behavior
+                    alert(`You clicked on: ${link.textContent}`);
+                });
+            });
+
+            // Optional: Add any other interactivity you desire
+
+        </script>
     </main>
     </div>
 </body>
-<script src="./index.js"></script>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
+<script src="{% static 'js/index.js' %}"></script>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
 
 </html>
