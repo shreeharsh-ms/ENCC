@@ -228,6 +228,18 @@
         .meet-timing:hover {
             color: white !important;
         }
+
+        .for-media {
+            font-size: 5rem !important;
+            margin-bottom: 30px !important;
+            color: #46afeb !important;
+        }
+
+        @media (max-width: 768px) {
+            .for-media {
+                font-size: 3rem !important;
+            }
+        }
     </style>
 </head>
 
@@ -245,7 +257,7 @@
                 <video src="{% static 'media\explore.mp4' %}" muted loop autoplay class="video"></video>
                 <div class="overlay"></div>
                 <div class="text">
-                    <h2 style="font-size: 100px; margin-bottom: 30px; color: #46afeb;">Enkryptia</h2>
+                    <h2 class="for-media">Enkryptia</h2>
                     <h1 class="mb-4 pb-0">The Annual<br><span>Hackathon</span> Event</h1>
                     <p class="mb-4 pb-0">24-25 October,<br /> Goverment Polytechnic, Nagpur</p>
                     <a href="https://lu.ma/09lmt81v" class="about-btn scrollto">Register</a>
