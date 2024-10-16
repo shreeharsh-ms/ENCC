@@ -6,6 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="{% static 'assets/img/logo-removebg-preview.png' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Web site created using create-react-app" />
@@ -17,6 +18,9 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="{% static 'css/main.2705007e.css' %}" rel="stylesheet" />
     <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -33,6 +37,10 @@
     <link rel="stylesheet" href="{% static 'assets/css/style2.css' %}">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
@@ -43,6 +51,11 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
     <style>
         .footer {
             background: linear-gradient(135deg, #9050f0, #791e8f, #e91c53);
@@ -240,7 +253,145 @@
                 font-size: 3rem !important;
             }
         }
+
+        .footer-btn {
+            background-color: white;
+            color: black;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: 2px solid black;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            min-width: 200px;
+        }
+
+        .ntx-bck {
+            min-width: 100px;
+            height: 100%;
+            background-color: #00acff;
+            color: white;
+        }
+
+        .footer-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        .ntx-bck:hover {
+            background-color: #010818;
+        }
+
+        .text {
+            width: 100%;
+        }
     </style>
+    <script>
+        let numb;
+        let currentImageIndex = 1;
+        let totalImages;
+        let src, ext;
+
+        function updateBannerImage() {
+            const bannerImage = document.getElementById('bannerImage');
+
+            if (numb == 1) {
+                bannerImage.src = `{% static 'assets/img/hack/${currentImageIndex}.${ext}' %}`;
+                bannerImage.classList.remove('added-rule');
+                const ruleBook = document.getElementById('extra-class');
+                ruleBook.classList.remove('extra-class');
+            }
+            else {
+                bannerImage.src = `{% static 'assets/img/MUN/${currentImageIndex}.${ext}' %}`;
+            }
+        }
+        function nxtBtn() {
+            currentImageIndex++;
+            if (currentImageIndex > totalImages) {
+                currentImageIndex = 1; // Loop back to the first image if at the end
+            }
+            updateBannerImage();
+        };
+
+        // Back button event
+        function bckBtn() {
+            currentImageIndex--;
+            if (currentImageIndex < 1) {
+                currentImageIndex = totalImages; // Loop back to the last image if at the start
+            }
+            updateBannerImage();
+        };
+
+        function handle(num) {
+            numb = num;
+            num == 1 ? totalImages = 5 : totalImages = 7; // Starting image index
+            num == 1 ? src = `{% static 'assets/img/hack/` : src = `{% static 'assets/img/MUN/`;
+            num == 1 ? ext = `png` : ext = 'jpg';
+
+            // Change the image source when clicking next or back
+            // Next button event
+            // Optional: handle download rulebook or view timeline if needed
+        }
+
+        function timelinView() {
+            attributeSet = parseInt(document.getElementById('timelineBtn').getAttribute('data'));
+            console.log(attributeSet)
+            primary_crowd(attributeSet, false)
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const tiles = document.querySelectorAll('.cardPostId');
+            tiles.forEach(tile => {
+                tile.addEventListener('click', () => {
+                    // Loop through each tile and remove 'another-class' from all tiles
+                    tiles.forEach(tiler => {
+                        tiler.classList.remove('another-class');
+                    });
+
+                    // Add 'another-class' only to the clicked tile
+                    tile.classList.add('another-class');
+
+                });
+            });
+
+        })
+        function loadContent(num) {
+            const bannerImage = document.getElementById('bannerImage');
+
+            if (num == 1) {
+
+                const bannerInto = document.getElementById('banner-into');
+                bannerInto.src = `{% static 'assets/img/Events/encr1.png' %}`;
+                bannerImage.src = `{% static 'assets/img/hack/1.png' %}`;
+                bannerImage.classList.remove('added-rule');
+                const ruleBook = document.getElementById('extra-class');
+                ruleBook.classList.remove('extra-class');
+                attributeSet = document.getElementById('timelineBtn').setAttribute('data', '1');
+                // document.getElementById('downloadBtn').href = "https://drive.google.com/file/d/1GRDvtkAXelWly3cgBPEov_9o2829B-aF/view?usp=drive_link";
+
+                // document.getElementById('downloadBtn').href = "https://drive.google.com/file/d/1JI4MAb52AF9XKU_pioJEz7Q2ywss9Uph/view?usp=drive_link";
+                document.getElementById('downloadBtn').addEventListener('click', () => {
+
+                    window.location.href = "https://drive.google.com/file/d/1GRDvtkAXelWly3cgBPEov_9o2829B-aF/view?usp=drive_link";
+                });
+                handle(num);
+            }
+            if (num == 2) {
+                const bannerInto = document.getElementById('banner-into');
+                bannerInto.src = `{% static 'assets/img/Events/encr2.png' %}`;
+                bannerImage.src = `{% static 'assets/img/MUN/1.jpg' %}`;
+                bannerImage.classList.add('added-rule');
+                const ruleBook = document.getElementById('extra-class');
+                ruleBook.classList.add('extra-class');
+                attributeSet = document.getElementById('timelineBtn').setAttribute('data', '2');
+                handle(num);
+                document.getElementById('downloadBtn').addEventListener('click', () => {
+                    window.location.href = "https://drive.google.com/file/d/1JI4MAb52AF9XKU_pioJEz7Q2ywss9Uph/view?usp=drive_link";
+                });
+
+            }
+        }
+
+    </script>
 </head>
 
 <body>
@@ -258,9 +409,15 @@
                 <div class="overlay"></div>
                 <div class="text">
                     <h2 class="for-media">Enkryptia</h2>
-                    <h1 class="mb-4 pb-0">The Annual<br><span>Hackathon</span> Event</h1>
+                    <h1 class="mb-4 pb-0">The Annual<br><span>Departmental</span> Event</h1>
                     <p class="mb-4 pb-0">24-25 October,<br /> Goverment Polytechnic, Nagpur</p>
-                    <a href="https://lu.ma/09lmt81v" class="about-btn scrollto">Register</a>
+                    <a href="https://lu.ma/09lmt81v" class="about-btn scrollto">Hackathon</a>
+                    <a href="https://lu.ma/8rqnrunu" class="about-btn scrollto">MUN</a>
+                    <div class="below-event"
+                        style="background-color: #46afeb; width: 285px; height: 80px; margin-top: 15px; display: flex; justify-content: center; align-items: center;">
+                        <a href="#section-eve" class="about-btn scrollto"
+                            style="background-color: #46afeb; font-size: 1.5rem; margin-top: -5px;">See More</a>
+                    </div>
                 </div>
             </section>
 
@@ -268,7 +425,7 @@
                 <div class="navbar-nav ms-auto">
                     <a class="nav-item nav-link" href="#">Home</a>
                     <a class="nav-item nav-link" href="#speakers">Events</a>
-                    <a class="nav-item nav-link" href="#heros">Hackathon</a>
+                    <a class="nav-item nav-link" href="#hero">Hackathon</a>
                 </div>
             </div>
         </div>
@@ -301,43 +458,72 @@
             </div>
         </div>
     </section>
-    <!-- <section style="width: 100%; background-color: #0c0c1b;">
+    <section style="width: 100%; background-color: #0c0c1b;" class="sectio-added" id="section-eve">
         <div class="cvents-holder">
             <div class="writer-board">
-                <div class="card-post hackathon-post">
+                <div class="card-post hackathon-post cardPostId" onclick="loadContent(1)">
                     <img src="https://i0.wp.com/tecknoworks.com/wp-content/uploads/2020/01/hackathon-1.png"
-                        class="img-switch" alt="">
-                    <h2 class="subscript">Hackathon</h2>
+                        class="img-switch"
+                        style="-webkit-mask: linear-gradient(0deg, transparent, rgb(14, 200, 216) 100%) !important;"
+                        alt="">
+                    <h2 class="subscript" style="font-family: 'Times New Roman', Times, serif;">
+                        Hackathon</h2>
                 </div>
-                <div class="card-post hackathon-post">
+                <div class="card-post MUN-post cardPostId" onclick="loadContent(2)">
                     <img src="https://img.theweek.in/content/dam/week/leisure/society/images/2018/11/1/mun-1.jpg"
                         class="img-switch" alt="">
-                    <h2 class="subscript">MUN</h2>
+                    <h2 class="subscript" style="font-family: 'Times New Roman', Times, serif;">MUN</h2>
                 </div>
-                <div class="card-post hackathon-post">
+                <div class="card-post GPTL-post cardPostId">
                     <img src="https://i.ytimg.com/vi/x7yudbWlLGw/maxresdefault.jpg" class="img-switch" alt="">
-                    <h2 class="subscript">GPTL</h2>
+                    <h2 class="subscript" style="font-family: 'Times New Roman', Times, serif;">GPTL</h2>
                 </div>
             </div>
             <div class="poster-and-rulebook">
                 <div class="banner-holder-bulbul">
-                    <img src="{% static 'assets/img/Events/encr1.png' %}" class="banner-into" alt="">
+                    <img src="{% static 'assets/img/Events/encr1.png' %}" style="" class="banner-into baller"
+                        id="banner-into" alt="">
                 </div>
                 <div class="rulebook-holder">
                     <div class="rulebook-top">
-                        <h2 class="anth-samay">RULEBOOK</h2>
+                        <h2 class="anth-samay" style="font-family: 'Times New Roman', Times, serif;">RULEBOOK</h2>
                     </div>
-                    <div class="rulebook">
-
+                    <div class="rulebook" id="extra-class">
+                        <img src="{% static 'assets\img\hack\1.png' %}" alt="" id="bannerImage"
+                            class="banner-into rulebook-dash" alt="Event Banner">
                     </div>
                     <div class="rulebook-footer">
+                        <!-- Back Button -->
+                        <div class="btn-c">
+                            <button id="backBtn" onclick="bckBtn()" class="footer-btn ntx-bck">Back</button>
+                            <button id="nextBtn" onclick="nxtBtn()" class="footer-btn ntx-bck">Next</button>
+                        </div>
 
+
+                        <!-- Download Rulebook Button -->
+                        <div class="float-righter">
+                            <a id="downloadBtn"><button class="footer-btn">Download Rulebook</button></a>
+
+                            <!-- View Timeline Button -->
+                            <a href="#root">
+                                <button id="timelineBtn" class="footer-btn" data="1" onclick="timelinView()">View
+                                    Timeline</button>
+                            </a>
+                        </div>
+
+                        <!-- Next Button -->
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
-
+        <script src="../cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="../cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+        <script src="../cdn.jsdelivr.net/npm/vanta/dist/vanta.halo.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    </section>
+    <div id="root"></div>
     <section id="clients" class="clients section-bg p-5">
         <div class="container">
 
@@ -370,20 +556,22 @@
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
                     <img src="{% static 'assets/img/clients/client-8.png' %}" class="img-fluid" alt="Client 8">
                 </div>
-
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'assets/img/clients/learners_den.png' %}" class="img-fluid" alt="Client 8">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'assets/img/clients/client-5.png' %}" class="img-fluid" alt="Client 8">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'assets/img/clients/clint11.png' %}" style="width: 130px; height: 130px;"
+                        class="img-fluid" alt="Client 8">
+                </div>
             </div>
 
         </div>
     </section>
 
 
-    <div id="root"></div>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="../cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
-    <script src="../cdn.jsdelivr.net/npm/vanta/dist/vanta.halo.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
 
 
     <!-- <section id="portfolio" class="portfolio">
@@ -445,7 +633,7 @@
 
 
 
-    <div class="content">
+    <div class="content" id="content-sec">
 
         <div class="container ">
             <div class="row mb-5 ">
@@ -969,9 +1157,9 @@
                     <div class="col-md-4">
                         <h5 class="meet-timing">Our Services</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#" class=" service-link">Home</a></li>
-                            <li><a href="#speakers" class=" service-link">Event <br></a></li>
-                            <li><a href="#heros" class=" service-link">Hackathon</a></li>
+                            <li><a class=" service-link">Home</a></li>
+                            <li><a class=" service-link">Event <br></a></li>
+                            <li><a class=" service-link">Domains</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1031,8 +1219,8 @@
                     </div>
                 </div>
                 <div class="footer-bottom text-center mt-4">
-                    <p>&copy; 2024 <a href="https://www.linkedin.com/in/janesmith" target="_blank"
-                            class="text-light">Enkryptia</a>. All rights reserved.</p>
+                    <p>&copy; 2024 <span class="text-light">Enkryptia</span>
+                        . All rights reserved.</p>
                 </div>
             </div>
         </footer>

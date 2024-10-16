@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     opacity: 1;
+    max-height: auto;
 }
 
 .writer-board {
@@ -25,16 +26,40 @@
 .card-post {
     width: 32%;
     height: 90%;
-    background-color: rgb(25, 25, 48);
+    background-color: rgb(0, 52, 107);
     border-radius: 10px;
     position: relative;
+    -webkit-mask: linear-gradient(0deg, transparent, rgb(181, 26, 26) 50%) !important;
+    transition: 1s ease;
+
+}
+
+.MUN-post {
+    background-color: rgb(88, 45, 2);
+
+}
+
+.GPTL-post {
+    background-color: rgb(1, 48, 15);
+
 }
 
 .img-switch {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    -webkit-mask: linear-gradient(0deg, transparent, white 80%);
+
+    -webkit-mask: linear-gradient(0deg, transparent, rgb(181, 26, 26) 100%) !important;
+    /* Chrome, Safari */
+    mask-image: linear-gradient(0deg, transparent, rgb(212, 28, 28) 100%) !important;
+    /* display: none; */
+    /* Standard for other browsers */
+
+}
+
+.rulebook-dash {
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -42,15 +67,20 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+
 }
 
 .subscript {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    font-size: 40px;
+    font-size: 2rem;
     color: white;
-    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 800 !important;
+    /* font-family: "Quicksand", sans-serif !important; */
+    /* font-family: 'Times New Roman', Times, serif !important; */
+
 
 }
 
@@ -67,7 +97,11 @@
 }
 
 .anth-samay {
-    font-size: 60px;
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
 }
 
@@ -75,6 +109,9 @@
     width: 36%;
     height: 100%;
     background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rulebook-holder {
@@ -95,11 +132,290 @@
 
 .rulebook {
     width: 100%;
-    height: 70%;
+    height: 67%;
+    overflow: hidden;
 }
 
 .rulebook-footer {
     width: 100%;
     height: 15%;
-    background-color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.added-rule {
+    width: 55%;
+    height: 100%;
+}
+
+.another-class {
+    background-color: rgb(56, 67, 223);
+    -webkit-mask: linear-gradient(0deg, transparent, rgb(181, 26, 26) 80%) !important;
+    transition: 1s ease;
+
+}
+
+.float-righter {
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.btn-c {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1550px) {
+    .added-rule {
+        height: 105%;
+        width: 533px;
+    }
+
+}
+
+@media (max-width: 1431px) {
+    .banner-holder-bulbul {
+        height: 72%;
+        width: 30%;
+    }
+
+    .rulebook-dash {
+        height: 90%;
+    }
+
+    .added-rule {
+        height: 108%;
+        width: 534px;
+    }
+
+
+}
+
+@media (max-width: 1260px) {
+    .rulebook-dash {
+        height: 80%;
+    }
+
+    .added-rule {
+        height: 95%;
+        width: 439px;
+    }
+
+    .float-righter {
+        display: block;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1091px) {
+    .banner-holder-bulbul {
+        height: 70%;
+        width: 35%;
+    }
+
+    .rulebook-dash {
+        height: 70%;
+    }
+
+    .added-rule {
+        height: 120%;
+        width: 439px;
+    }
+}
+
+@media (max-width: 920px) {
+    .banner-holder-bulbul {
+        height: 55%;
+        width: 33%;
+
+    }
+}
+
+@media (max-width: 950px) {
+    .rulebook-dash {
+        height: 60%;
+    }
+
+    .added-rule {
+        height: 95%;
+        width: 439px;
+    }
+}
+
+@media (max-width: 771px) {
+    .poster-and-rulebook {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 838px) {
+    .rulebook-dash {
+        height: 50%;
+    }
+
+    .added-rule {
+        height: 95%;
+        width: 439px;
+    }
+}
+
+@media (max-width: 678px) {
+    .poster-and-rulebook {
+        height: 1800px;
+        max-height: auto;
+        justify-content: center;
+    }
+
+    .banner-holder-bulbul {
+        width: 900px;
+        height: 85%;
+    }
+
+    .baller {
+        width: 900px;
+        height: 500px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .rulebook-dash {
+        width: 100%;
+        height: 60%;
+    }
+
+    .sectio-added {
+        height: 1500px;
+    }
+
+    .rulebook-footer {
+        width: 100%;
+        height: 15%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+
+    .btn-c {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .float-righter {
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        /* display: none; */
+    }
+
+    .float-righter button {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .rulebook {
+        width: 125%;
+        height: 180px;
+        margin-left: -50px;
+    }
+
+    .rulebook-dash {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .rulebook {
+        width: 145%;
+        height: 180px;
+        margin-left: -50px;
+    }
+
+    .rulebook-dash {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .rulebook {
+        width: 165%;
+        height: 180px;
+        margin-left: -70px;
+    }
+
+    .rulebook-dash {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 370px) {
+    .rulebook {
+        width: 188%;
+        height: 180px;
+        margin-left: -80px;
+    }
+
+    .rulebook-dash {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 804px) {
+    .banner-holder-bulbul {
+        height: 50%;
+        width: 33%;
+
+    }
+}
+
+@media (max-width: 759px) {
+    .added-rule {
+        height: 97%;
+        width: 366px;
+    }
+}
+
+@media (max-width: 638px) {
+    .added-rule {
+        height: 100%;
+        width: 359px;
+    }
+}
+
+@media (max-width: 489px) {
+    .added-rule {
+        height: 100%;
+        width: 359px;
+    }
+}
+
+@media (max-width: 489px) {
+    .cardPostId {
+        height: 200px;
+    }
+
+    .subscript {
+        font-size: 1rem;
+    }
+}
+
+.extra-class {
+    width: 160%;
+    height: auto;
 }

@@ -1,4 +1,4 @@
-! function () {
+function primary_crowd(prime, bool) {
     var e = {
         945: function (e) {
             e.exports = function (e) {
@@ -7837,7 +7837,7 @@
     }, n.o = function (e, t) {
         return Object.prototype.hasOwnProperty.call(e, t)
     }, n.p = "/",
-        function () {
+        function runner_hood() {
             "use strict";
             var e = n(791),
                 t = n(250),
@@ -8132,110 +8132,139 @@
                         })
                     })
                 },
-                te = function () {
-                    return (0, u.jsx)("div", {
-                        children: (0, u.jsx)("div", {
-                            id: "content",
-                            children: (0, u.jsxs)("ul", {
-                                className: "timeline",
-                                children: [
-                                    (0, u.jsxs)("li", {
-                                        className: "event",
-                                        "data-date": "12:00 AM - 2:00 AM",
-                                        "data-aos": "fade-up",
-                                        children: [(0, u.jsx)("h3", {
-                                            children: "Tea / Coffee"
-                                        }), (0, u.jsx)("p", {
-                                            children: ""
-                                        })]
-                                    }), (0, u.jsxs)("li", {
-                                        className: "event",
-                                        "data-date": "7:00 AM",
-                                        "data-aos": "fade-up",
-                                        children: [(0, u.jsx)("h3", {
-                                            children: "Snacks"
-                                        }), (0, u.jsx)("p", {
-                                            // children: "Get ready for GoAlgo and Innovation Junction. A junction of games where one will challenge your programming skills whilst the other challenges your innovative skills."
-                                        })]
-                                    }), (0, u.jsxs)("li", {
-                                        className: "event",
-                                        "data-date": "10:00 AM",
-                                        "data-aos": "fade-up",
-                                        children: [(0, u.jsx)("h3", {
-                                            children: "Lunch"
-                                        }), (0, u.jsx)("p", {
-                                            // children: "Get ready for GoAlgo and Innovation Junction. A junction of games where one will challenge your programming skills whilst the other challenges your innovative skills."
-                                        })]
-                                    }), (0, u.jsxs)("li", {
-                                        className: "event",
-                                        "data-date": "2:00 PM",
-                                        "data-aos": "fade-up",
-                                        children: [(0, u.jsx)("h3", {
-                                            children: "Code Time Ends"
-                                        }), (0, u.jsx)("p", {
-                                            // children: "Get ready for GoAlgo and Innovation Junction. A junction of games where one will challenge your programming skills whilst the other challenges your innovative skills."
-                                        })]
-                                    }), (0, u.jsxs)("li", {
-                                        className: "event",
-                                        "data-date": "2:00 PM - 3:30 PM",
-                                        "data-aos": "",
-                                        children: [(0, u.jsx)("h3", {
-                                            children: "Solution Presentation"
-                                        }), (0, u.jsx)("p", {
-                                            // children: "Get ready for GoAlgo and Innovation Junction. A junction of games where one will challenge your programming skills whilst the other challenges your innovative skills."
-                                        })]
-                                    }), (0, u.jsxs)("li", {
-                                        className: "event",
-                                        "data-date": "4:00 PM",
-                                        "data-aos": "fade-up",
-                                        children: [(0, u.jsx)("h3", {
-                                            children: "Prize Distribution"
-                                        }), (0, u.jsx)("p", {
-                                            // children: "Get ready for GoAlgo and Innovation Junction. A junction of games where one will challenge your programming skills whilst the other challenges your innovative skills."
-                                        })]
-                                    })
-                                ]
+                te = function ({ num }) {
+                    console.log('fucked ups')
+                    if (num == 1) {
+                        return (0, u.jsx)("div", {
+                            children: (0, u.jsx)("div", {
+                                id: "content",
+                                children: (0, u.jsxs)("ul", {
+                                    className: "timeline",
+                                    children: [
+                                        (0, u.jsxs)("li", {
+                                            className: "event",
+                                            "data-date": "12:00 AM - 2:00 AM",
+                                            "data-aos": "fade-up",
+                                            children: [(0, u.jsx)("h3", {
+                                                children: "Tea / Coffee"
+                                            }), (0, u.jsx)("p", {
+                                                children: ""
+                                            })]
+                                        }), (0, u.jsxs)("li", {
+                                            className: "event",
+                                            "data-date": "7:00 AM",
+                                            "data-aos": "fade-up",
+                                            children: [(0, u.jsx)("h3", {
+                                                children: "Snacks"
+                                            }), (0, u.jsx)("p", {
+                                                // children: "Get ready for GoAlgo and Innovation Junction. A junction of games where one will challenge your programming skills whilst the other challenges your innovative skills."
+                                            })]
+                                        }), (0, u.jsxs)("li", {
+                                            className: "event",
+                                            "data-date": "10:00 AM",
+                                            "data-aos": "fade-up",
+                                            children: [(0, u.jsx)("h3", {
+                                                children: "Lunch"
+                                            }), (0, u.jsx)("p", {
+                                                // children: "Get ready for GoAlgo and Innovation Junction. A junction of games where one will challenge your programming skills whilst the other challenges your innovative skills."
+                                            })]
+                                        }), (0, u.jsxs)("li", {
+                                            className: "event",
+                                            "data-date": "2:00 PM",
+                                            "data-aos": "fade-up",
+                                            children: [(0, u.jsx)("h3", {
+                                                children: "Code Time Ends"
+                                            }), (0, u.jsx)("p", {
+                                                // children: "Get ready for GoAlgo and Innovation Junction. A junction of games where one will challenge your programming skills whilst the other challenges your innovative skills."
+                                            })]
+                                        }), (0, u.jsxs)("li", {
+                                            className: "event",
+                                            "data-date": "2:00 PM - 3:30 PM",
+                                            "data-aos": "",
+                                            children: [(0, u.jsx)("h3", {
+                                                children: "Solution Presentation"
+                                            }), (0, u.jsx)("p", {
+                                                // children: "Get ready for GoAlgo and Innovation Junction. A junction of games where one will challenge your programming skills whilst the other challenges your innovative skills."
+                                            })]
+                                        }), (0, u.jsxs)("li", {
+                                            className: "event",
+                                            "data-date": "4:00 PM",
+                                            "data-aos": "fade-up",
+                                            children: [(0, u.jsx)("h3", {
+                                                children: "Prize Distribution"
+                                            }), (0, u.jsx)("p", {
+                                                // children: "Get ready for GoAlgo and Innovation Junction. A junction of games where one will challenge your programming skills whilst the other challenges your innovative skills."
+                                            })]
+                                        })
+                                    ]
+                                })
                             })
                         })
-                    })
+                    }
                 },
-                ne = function () {
+                ne = function ({ num }) {
                     var t = K((0, e.useState)(!1), 2),
                         n = t[0],
                         r = t[1];
-                    return (0, u.jsxs)("div", {
-                        className: $,
-                        children: [(0, u.jsx)(s, {
-                            // backText: "Timeline",
+                    if (num == 1) {
+                        return (0, u.jsxs)("div", {
+                            className: $,
+                            children: [(0, u.jsx)(s, {
+                                // backText: "Timeline",
 
-                            children: "Timeline"
-                        }), (0, u.jsxs)("div", {
-                            className: J,
-                            children: [(0, u.jsx)("div", {
-                                className: Z,
-                                onClick: function () {
-                                    r(!1), q("show")
-                                },
-                                children: (0, u.jsxs)("p", {
-                                    children: ["24", (0, u.jsx)("sup", {
-                                        children: "th"
-                                    }), " October"]
-                                })
-                            }), (0, u.jsx)("div", {
-                                className: Z,
-                                onClick: function () {
-                                    r(!0), q("show")
-                                },
-                                children: (0, u.jsxs)("p", {
-                                    children: ["25", (0, u.jsx)("sup", {
-                                        children: "th"
-                                    }), " October"]
-                                })
+                                children: "Timeline"
+                            }), (0, u.jsxs)("div", {
+                                className: J,
+                                children: [(0, u.jsx)("div", {
+                                    className: Z,
+                                    onClick: function () {
+                                        r(!1), q("show")
+                                    },
+                                    children: (0, u.jsxs)("p", {
+                                        children: ["24", (0, u.jsx)("sup", {
+                                            children: "th"
+                                        }), " October"]
+                                    })
+                                }), (0, u.jsx)("div", {
+                                    className: Z,
+                                    onClick: function () {
+                                        r(!0), q("show")
+                                    },
+                                    children: (0, u.jsxs)("p", {
+                                        children: ["25", (0, u.jsx)("sup", {
+                                            children: "th"
+                                        }), " October"]
+                                    })
+                                })]
+                            }), n ? (0, u.jsx)(te, { num: prime }) : (0, u.jsx)(ee, {}), (0, u.jsx)("div", {
+                                id: "speakers"
                             })]
-                        }), n ? (0, u.jsx)(te, {}) : (0, u.jsx)(ee, {}), (0, u.jsx)("div", {
-                            id: "speakers"
-                        })]
-                    })
+                        })
+                    }
+                    else {
+                        console.log('sfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaak');
+                        return (0, u.jsxs)("div", {
+                            className: $,
+                            children: [(0, u.jsx)(s, {
+                                // backText: "Timeline",
+
+                                children: "Timeline"
+                            }), (0, u.jsxs)("div", {
+                                className: J,
+                                children: [(0, u.jsx)("div", {
+                                    className: Z,
+                                    onClick: function () {
+                                        r(!0), q("show")
+                                    },
+                                    children: (0, u.jsxs)("p", {
+                                        children: ["25", (0, u.jsx)("sup", {
+                                            children: "th"
+                                        }), " October"]
+                                    })
+                                })]
+                            }), (0, u.jsx)(te, { num: prime })]
+                        })
+                    }
                 },
                 re = "Speakers_speakersRoot__GLxi4",
                 ae = "Speakers_speakersContainer__yeDBm",
@@ -8634,7 +8663,7 @@
                 },
                 Ue = function () {
                     var t = (new Date).getTime(),
-                        n = new Date("2024-10-22 11:59:00 PM").getTime(),
+                        n = new Date("2024-10-23 11:59:00 PM").getTime(),
                         r = K((0, e.useState)(n - t), 2),
                         a = r[0],
                         i = r[1];
@@ -8816,7 +8845,7 @@
                 }), []), (0, u.jsx)("div", {
                     children: (0, u.jsxs)("div", {
                         className: "body",
-                        children: [(0, u.jsx)(Re, {}), (0, u.jsx)(Be, {}), (0, u.jsx)(P, {}), (0, u.jsx)(ne, {})]
+                        children: [bool ? (0, u.jsx)(Re, {}) : null, (0, u.jsx)(ne, { num: prime }), (0, u.jsx)(Be, {}), (0, u.jsx)(P, {}),]
                     })
                 })
             };
@@ -8824,5 +8853,6 @@
                 children: (0, u.jsx)(Qe, {})
             }))
         }()
-}();
-//# sourceMappingURL=main.005e037c.js.map
+};
+
+primary_crowd(1, true)
