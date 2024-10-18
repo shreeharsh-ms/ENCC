@@ -295,13 +295,20 @@
             const bannerImage = document.getElementById('bannerImage');
 
             if (numb == 1) {
-                bannerImage.src = `{% static 'assets/img/hack/${currentImageIndex}.${ext}' %}`;
+                // bannerImage.src = `{% static 'assets/img/hack/${currentImageIndex}.${ext}' %}`;
+                const staticPath = "{% static 'assets/img/hack/' %}";
+                const bannerImage = document.getElementById('bannerImage');
+                bannerImage.src = `${staticPath}${currentImageIndex}.${ext}`;
                 bannerImage.classList.remove('added-rule');
                 const ruleBook = document.getElementById('extra-class');
                 ruleBook.classList.remove('extra-class');
             }
             else {
-                bannerImage.src = `{% static 'assets/img/MUN/${currentImageIndex}.${ext}' %}`;
+
+                const staticPath = "{% static 'assets/img/MUN/' %}";
+                const bannerImage = document.getElementById('bannerImage');
+                bannerImage.src = `${staticPath}${currentImageIndex}.${ext}`;
+
             }
         }
         function nxtBtn() {
@@ -1154,14 +1161,14 @@
                             collaboration, and problem-solving
                         </p>
                     </div>
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <h5 class="meet-timing">Our Services</h5>
                         <ul class="list-unstyled">
                             <li><a class=" service-link">Home</a></li>
                             <li><a class=" service-link">Event <br></a></li>
                             <li><a class=" service-link">Domains</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="row mt-4">
